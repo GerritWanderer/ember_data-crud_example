@@ -1,0 +1,10 @@
+<h1>Application</h1>
+
+<p>Manage Persons:</p>
+<ul>
+  {{#each person in content}}
+    <li>{{#linkTo person person}}{{person.fullName}}{{/linkTo}}</li>
+  {{/each}}
+</ul>
+
+{{#linkTo personsNew}}New Person{{/linkTo}}

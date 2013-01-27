@@ -1,5 +1,5 @@
 var App = Ember.Application.create();
-App.FixtureStore = DS.Store.create({
+App.Store = DS.Store.extend({
   revision: 11,
-  adapter: 'DS.FixtureAdapter'
+  adapter: DS.RESTAdapter.create({ bulkCommit: false })
 });
