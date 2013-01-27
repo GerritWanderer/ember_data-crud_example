@@ -11,5 +11,8 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
-//= require jquery_ujs
+//= require handlebars
+//= require ./vendor/ember
+//= require ./vendor/ember-data
+//= require ./app
 //= require_tree .
